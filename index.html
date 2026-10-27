@@ -27,8 +27,30 @@
 @media(prefers-reduced-motion:reduce){#jelajahi .card,#jelajahi .card img,.lightbox,.lightbox img,.lightbox-close,.lightbox-caption{transition:none!important;animation:none!important}}
 
 
+
+/* Sejarah Parepare */
+.history{background:#fff}
+.history-intro{display:grid;grid-template-columns:170px 1fr;gap:25px;align-items:center;padding:28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(120deg,#f0f7ef,#fff);margin-bottom:34px}
+.history-mark{height:130px;border-radius:16px;background:linear-gradient(145deg,#164b36,#2e805a);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;box-shadow:inset 0 0 0 1px #ffffff25}
+.history-mark span{font-size:2.6rem;letter-spacing:.08em;font-weight:800}
+.history-mark small{font-size:.56rem;letter-spacing:.15em;margin-top:6px}
+.history-intro h3{font-size:1.35rem;margin:0 0 9px}
+.history-intro p{margin:0;max-width:720px;color:var(--muted);line-height:1.8}
+.history-timeline{position:relative;max-width:850px;margin:0 auto}
+.history-timeline:before{content:"";position:absolute;left:23px;top:20px;bottom:28px;width:2px;background:linear-gradient(#75ad86,#dce9dd)}
+.history-item{position:relative;display:grid;grid-template-columns:48px 1fr;gap:18px;padding:0 0 29px}
+.history-dot{position:relative;z-index:1;width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:#eaf4eb;border:1px solid #d3e6d5;color:var(--g);font-weight:800;font-size:.8rem;transition:transform .3s ease,background .3s ease,color .3s ease}
+.history-item:hover .history-dot{transform:scale(1.1) rotate(-4deg);background:var(--g);color:#fff}
+.history-period{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:var(--g)}
+.history-item h3{font-size:1.15rem;margin:5px 0 7px}
+.history-item p{margin:0;color:var(--muted);line-height:1.8}
+.history-source{font-size:.8rem;color:var(--muted);padding-top:17px;border-top:1px solid var(--line)}
+.history-source a{color:var(--g);font-weight:700}
+@media(max-width:560px){.history-intro{grid-template-columns:1fr;padding:18px;gap:16px}.history-mark{height:100px}.history-item{gap:12px;grid-template-columns:42px 1fr}.history-dot{width:42px;height:42px}.history-timeline:before{left:20px}}
+@media(prefers-reduced-motion:reduce){.history-dot{transition:none}}
+
 </style></head><body>
-<header class="nav"><div class="wrap navin"><a class="brand" href="#beranda"><span class="mark">P</span>parepare<span style="color:#7da487">.</span></a><nav class="links" aria-label="Navigasi"><a href="#tentang">Tentang</a><a href="#viral">Jelajahi</a><a href="#budaya">Budaya</a><a class="pill" href="#referensi">Sumber resmi ↗</a></nav></div></header>
+<header class="nav"><div class="wrap navin"><a class="brand" href="#beranda"><span class="mark">P</span>parepare<span style="color:#7da487">.</span></a><nav class="links" aria-label="Navigasi"><a href="#tentang">Tentang</a><a href="#jelajahi">Jelajahi</a><a href="#sejarah">Sejarah</a><a href="#budaya">Budaya</a><a class="pill" href="#referensi">Sumber resmi ↗</a></nav></div></header>
 <main><section class="hero" id="beranda"><div class="wrap hero-grid"><div><span class="eyebrow">Sulawesi Selatan · Indonesia</span><h1>Kota kecil,<br><em>cerita besar.</em></h1><p>Mengenal Parepare, kota pesisir yang menyatukan panorama Teluk, denyut pelabuhan, budaya Bugis, dan kisah seorang anak bangsa yang mendunia.</p><div class="actions"><a class="btn primary" href="#jelajahi">Jelajahi Parepare ↗</a><a class="btn" href="#tentang">Cerita kota ↓</a></div></div><div class="hero-visual"><img class="hero-img" src="https://media.zcreators.id/crop/0x0%3A0x0/x/photo/p2/95/2023/06/23/FotoJet-5-201664491.jpg" alt="Ombak laut dan garis pantai"><div class="stamp"><small>IDENTITAS KOTA</small><strong>Bergerak bersama laut.</strong></div></div></div></section>
 <div class="facts"><div class="wrap facts-grid"><div class="fact"><strong>Kota pesisir</strong><span>Menghadap Teluk Parepare</span></div><div class="fact"><strong>Sulawesi Selatan</strong><span>Bagian dari kawasan Ajatappareng</span></div><div class="fact"><strong>B.J. Habibie</strong><span>Kota kelahiran Presiden ke-3 RI</span></div></div></div>
 <section class="about" id="tentang"><div class="wrap two"><img class="about-img" src="https://upload.wikimedia.org/wikipedia/commons/b/be/Taman_Mattirotasi_Parepare_%282021%29.jpg" alt="Laut biru dengan ombak lembut" loading="lazy"><div><span class="eyebrow">Tentang Parepare</span><h2>Di antara laut, kota, dan kisah yang tumbuh.</h2><p>Parepare adalah kota di pesisir barat Sulawesi Selatan. Bentang Teluk Parepare memberi karakter kuat pada kehidupan kota—mulai dari aktivitas pelabuhan hingga ruang publik tempat warga menikmati angin laut.</p><p>Kota ini lekat dengan identitas Bugis dan sejarah B.J. Habibie, tokoh teknologi Indonesia yang lahir di Parepare. Parepare menarik dikenal bukan hanya sebagai tempat singgah, tetapi juga sebagai kota dengan cerita sendiri.</p><div class="note">Datang untuk pemandangannya. Tinggal lebih lama untuk mengenal ceritanya.</div></div></div></section>
@@ -41,6 +63,26 @@
 <article class="card"><img src="https://kataomed.com/wp-content/uploads/2019/06/images-3-2.jpeg" alt="Laut terbuka" loading="lazy"><div class="card-body"><span class="tag">Panorama</span><h3>Teluk Parepare</h3><p>Kenali garis pantai dan suasana laut yang menjadi latar keseharian kota.</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Teluk+Parepare">Jelajahi peta ↗</a></div></article>
 </div></div></section>
 
+
+<section class="history" id="sejarah">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow">Jejak masa lalu</span><h2>Sejarah Parepare.</h2></div>
+      <p>Dari wilayah pesisir dan kerajaan Bugis hingga menjadi kota yang dikenal sebagai salah satu gerbang maritim Sulawesi Selatan.</p>
+    </div>
+    <div class="history-intro">
+      <div class="history-mark"><span>PP</span><small>SULAWESI SELATAN</small></div>
+      <div><h3>Kota yang tumbuh dari pesisir</h3><p>Catatan sejarah lokal mengaitkan perkembangan Parepare dengan kawasan pesisir Soreang dan Bacukiki, yang kemudian tumbuh sebagai wilayah penting untuk perdagangan dan pelayaran.</p></div>
+    </div>
+    <div class="history-timeline">
+      <article class="history-item"><span class="history-dot">01</span><div><span class="history-period">Sekitar abad XIV</span><h3>Awal kawasan Soreang</h3><p>Menurut Lontara Kerajaan Suppa, seorang anak Raja Suppa meninggalkan istana dan membangun permukiman di pesisir. Kawasan ini kemudian dikenal sebagai Kerajaan Soreang.</p></div></article>
+      <article class="history-item"><span class="history-dot">02</span><div><span class="history-period">Sekitar abad XV</span><h3>Bacukiki berkembang</h3><p>Kerajaan Bacukiki turut menjadi bagian dari sejarah awal wilayah Parepare, memperkaya jejak kerajaan Bugis di kawasan Ajatappareng.</p></div></article>
+      <article class="history-item"><span class="history-dot">03</span><div><span class="history-period">Abad XVI dan masa kolonial</span><h3>Pelabuhan dan pusat perdagangan</h3><p>Salah satu kisah asal nama Parepare mengaitkannya dengan ungkapan Bugis “Bajiki Ni Pare”, yang sering dimaknai sebagai tempat yang baik untuk pelabuhan. Pada masa Hindia Belanda, Parepare menjadi pusat administratif Afdeling Parepare.</p></div></article>
+      <article class="history-item"><span class="history-dot">04</span><div><span class="history-period">17 Februari 1960</span><h3>Hari jadi Kota Parepare</h3><p>Tanggal pelantikan wali kota pertama, H. Andi Mannaungi, ditetapkan sebagai hari jadi Kota Parepare melalui keputusan DPRD pada 1970. Kota ini terus berkembang sebagai pusat layanan, perdagangan, dan transportasi di Sulawesi Selatan.</p></div></article>
+    </div>
+    <p class="history-source">Kisah asal-usul nama Parepare memiliki beberapa versi. Ringkasan ini mengacu pada profil Pemerintah Provinsi Sulawesi Selatan dan pemberitaan RRI. <a href="https://dpmptsp.sulselprov.go.id/publik-profil-kabkota?id=23" target="_blank" rel="noopener">Profil Parepare ↗</a> · <a href="https://rri.co.id/nasional/2190001/mengulas-sejarah-hari-jadi-kota-parepare" target="_blank" rel="noopener">Baca sejarah di RRI ↗</a></p>
+  </div>
+</section>
 <section class="culture" id="budaya"><div class="wrap"><div class="section-head"><div><span class="eyebrow">Rasa dan identitas</span><h2>Lebih dari pemandangan.</h2></div><p>Perjalanan terasa lengkap saat kita mengenal kebiasaan, rasa, dan cerita orang-orang setempat.</p></div><div class="culture-grid"><article class="culture-card"><span class="eyebrow">01 / Budaya</span><h3>Budaya Bugis</h3><p>Nilai saling menghormati, ikatan komunitas, dan tradisi maritim menjadi bagian penting dari konteks budaya kawasan ini.</p></article><article class="culture-card"><span class="eyebrow">02 / Kuliner</span><h3>Kuliner pesisir</h3><p>Cari hidangan ikan dan makanan khas Sulawesi Selatan di warung lokal. Tanyakan rekomendasi warga untuk menemukan favorit setempat.</p></article><article class="culture-card"><span class="eyebrow">03 / Tokoh</span><h3>Jejak B.J. Habibie</h3><p>Parepare dikenal sebagai tempat kelahiran Bacharuddin Jusuf Habibie, insinyur dan Presiden ketiga Republik Indonesia.</p></article><article class="culture-card"><span class="eyebrow">04 / Perjalanan</span><h3>Kota penghubung</h3><p>Letak pesisir dan pelabuhan menjadikan Parepare bagian dari pergerakan regional di Sulawesi Selatan.</p></article></div></div></section>
 <section class="quote"><div class="wrap"><span class="eyebrow">Bawa pulang cerita</span><h2>Parepare layak dikenal<br>lebih dekat.</h2><p>Gunakan sumber resmi untuk mencari data terbaru, agenda kota, dan informasi perjalanan. Jadikan halaman ini sebagai pintu awal mengenal Parepare.</p><a class="btn" href="#referensi">Lihat sumber resmi ↗</a></div></section>
 <section class="sources" id="referensi"><div class="wrap"><span class="eyebrow">Bacaan lanjutan</span><h2>Kenali dari sumbernya.</h2><p>Informasi profil dan statistik dapat berubah. Gunakan tautan berikut untuk verifikasi dan detail terkini.</p><div class="source-links"><a target="_blank" rel="noopener" href="https://pareparekota.go.id/">Pemerintah Kota Parepare ↗</a><a target="_blank" rel="noopener" href="https://pareparekota.bps.go.id/">BPS Kota Parepare ↗</a><a target="_blank" rel="noopener" href="https://pareparekota.bps.go.id/">Statistik resmi ↗</a><a target="_blank" rel="noopener" href="https://www.indonesia.travel/id/id/cruise/ports/port-of-parepare">Indonesia Travel: Pelabuhan ↗</a><a target="_blank" rel="noopener" href="https://sulsel.bpk.go.id/profil-kota-parepare/">Profil Kota Parepare ↗</a></div></div></section></main>
